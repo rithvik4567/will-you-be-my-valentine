@@ -1,5 +1,5 @@
 body {
-    background-color: white;
+    background-color: beige;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -8,6 +8,7 @@ body {
     align-items: center;
     flex-direction: column;
 }
+
 
 .buttons {
     display: flex;
@@ -73,11 +74,17 @@ body {
     width: 100%;
     height: auto;
     margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
 
-    img {
-        width: auto;
-        height: 250px;
-    }
+.banner-gif img {
+    /* Make the banner take up more space but stay responsive */
+    width: min(90vw, 1000px);
+    height: auto;
+    max-height: 60vh;
+    object-fit: contain;
+    border-radius: 6px;
 }
 
 .language-selector {

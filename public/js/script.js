@@ -69,8 +69,11 @@ no_button.addEventListener('click', () => {
     // Change banner source
     let banner = document.getElementById('banner');
     if (clicks === 0) {
-        banner.src = "public/images/no.gif";
+        banner.src = "public/images/sad.jpg";
         refreshBanner();
+        // change the whole page background to the 'no' background image
+        // Applies the CSS class defined in public/css/style.css
+        document.body.classList.add('no-background');
     }
     clicks++;
     // increase button height and width gradually to 250px
